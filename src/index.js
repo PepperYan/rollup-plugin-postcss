@@ -138,7 +138,7 @@ export default (options = {}) => {
             filepath = postcssLoaderOptions.extract
           } else {
             const basename = path.basename(opts.file, path.extname(opts.file))
-            filepath = path.join(path.dirname(opts.file), basename + '.css')
+            filepath = path.join(path.dirname(opts.file), basename + '.wxss')
           }
         }
         filepath = humanlizePath(filepath)
